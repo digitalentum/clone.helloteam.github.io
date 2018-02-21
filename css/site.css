@@ -1,0 +1,132 @@
+.site-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.75rem;
+	width: 100%;
+	z-index: 1000;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+.site-header a {
+    color: rgb(255, 255, 255);
+    transition: ease-in-out color .15s;
+}
+.brand-name {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: rgb(0, 123, 255);
+}
+
+.contact-form-container,
+.features-content-container {
+	padding-top: 4.5rem;
+	padding-bottom: 1.9rem;
+}
+
+.contact-form-container {
+	background-color: rgb(237, 220, 48);
+}
+
+.row.main-content {
+	margin: 0;
+}
+
+.illustration {
+	height: 18rem;
+	margin-bottom: 3rem;
+}
+
+.attribution {
+	margin-left: 2rem;
+	color: rgb(248, 249, 250);
+}
+
+.attribution:hover {
+	color: rgb(248, 249, 250);
+}
+
+.how-it-works {
+	text-align: left;
+	padding-bottom: 4rem;
+}
+
+.main-title {
+	padding-bottom: 2rem;
+}
+
+.intro {
+	padding-bottom: 2rem;
+	text-align: justify;
+}
+
+.how-it-works-title, .know-more-title {
+	padding-bottom: 1rem;
+}
+
+.step {
+	padding-top: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+.step .text {
+	margin-left: 1rem;
+}
+
+.step .icon {
+	height: 2rem;
+	width: 2rem;
+	color: rgb(0, 123, 255);
+}
+
+.explanation {
+	margin-left: 3rem;
+}
+
+.know-more {
+    background-color: rgb(238, 242, 243);
+    padding: 2rem;
+}
+
+.footer {
+	padding: 1rem;
+}
+
+.footer p {
+	padding-bottom: 0;
+}
+
+
+@media (min-width: 1441px) {
+	.features-align-container,
+	.contact-form-align-container {
+		padding: 6rem;
+	}
+}
+
+@media (min-width: 1366px) and (max-width: 1440px){
+	.features-align-container,
+	.contact-form-align-container {
+		padding: 4rem;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1365px){
+	.features-align-container,
+	.contact-form-align-container {
+		padding: 2rem;
+	}
+}
+
+@media (max-width: 1024px){
+	.features-align-container,
+	.contact-form-align-container {
+		padding: 1rem;
+	}
+}
