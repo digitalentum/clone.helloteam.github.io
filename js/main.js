@@ -4,13 +4,14 @@
 			var form = e.currentTarget;
 
 			if (form.checkValidity() === false) {
-				event.preventDefault();
-				event.stopPropagation();
+				e.preventDefault();
+				e.stopPropagation();
 			} else {
 				$.ajax({
 					method: 'GET',
 					url: 'https://script.google.com/macros/s/AKfycbwRkoFDUoZAWUs2O9Aa6rfMl1bYXxPzVDlEz6mAzFt-e6xSSaQ/exec',
 					dataType: 'jsonp',
+					jsonp: 'jsonpCallback',
 					data: {
 						firstName: $(form).find("#firstName").val(),
 						lastName: $(form).find("#lastName").val(),
@@ -20,8 +21,8 @@
 					}
 				});
 				
-				event.preventDefault();
-				event.stopPropagation();
+				e.preventDefault();
+				e.stopPropagation();
 			}
 
 			$(form).addClass('was-validated');
